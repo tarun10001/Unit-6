@@ -1,0 +1,106 @@
+#logo_container > img {
+  width: 27%;
+  cursor: pointer;
+}
+body {
+    background-color: #474a51;
+}
+#logo_container {
+  width: 25%;
+  margin-left: 1%;
+}
+#nav_container {
+  /* border: 1px solid red; */
+  background-color: #1D184B;
+  height: 75px;
+  display: flex;
+  margin: auto;
+  position: fixed;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#input_container {
+  display: flex;
+  align-items: center;
+  /* margin: auto; */
+  border-radius: 5px;
+}
+#input_container > input {
+  background-color: #454469;
+  border: none;
+  padding: 2%;
+  height: 36px;
+  width: 500px;
+  font-size: 18px;
+  color: white;
+}
+#input_container > button {
+  background-color: #454469;
+  color: white;
+  border: none;
+  font-size: 18px;
+  height: 36px;
+}
+#btn_container {
+  display: flex;
+  margin-right: 4%;
+  height: 36px;
+  width : 23%;
+  justify-content: space-between;
+}
+
+.newpostbtn {
+  background-color: white;
+  color: #1bb76e;
+
+}
+#newpost {
+  color: white;
+  background-color: #1bb76e;
+  margin-left: 2%;
+  width: 32%;
+  height: 36px;
+  border-radius: 5px;
+
+}
+
+#Go-Ad-Free {
+  color: white;
+  background-color: #6432f9;
+  height: 36px;
+  border-radius: 5px;
+  border: none;
+
+  width: 32%;
+}
+#sign-in {
+  color: white;
+  background-color: #1D184B;
+  border: none;
+}
+#book {
+    background-color: #1D184B;
+    border: none;
+}
+.fa-bookmark {
+    color: white;
+    border: none;
+    font-size: 25px;
+}
+#sign-up {
+  background-color: #1bb76e;
+  color: white;
+  border-radius: 5px;
+  height: 36px;
+  width: 32%;
+}
+
+#Cover{
+    background: url("../Image/cover.png");
+    padding:2px;
+}
+
+#heading {
+    margin-top: 1%;
+}

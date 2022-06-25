@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="./styles/index.css" />
+
+    <link rel="icon" href="	https://s.imgur.com/images/favicon-32x32.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Imgur: The magic of the Internet</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+ <link rel="stylesheet" href="./styles/navbar.css">
+</head>
+  <body>
+
+<div id="Cover">
+    <div id="Main-Nav-Container"></div>
+  </div>
+    <div id="container-heads">
+      <h4>MOST VIRAL<span>⌄</span></h4>
+      <h4>NEWEST<span>⌄</span></h4>
+    </div>
+    <div id="cont"></div>
+  </body>
+</html>
+
+
+<script type="module">
+ import {  clickedImages } from "./scripts/index.js"
+    import  Navbar  from './scripts/Navbar.js'
+    
+    let Navbar_div=document.getElementById('Main-Nav-Container')
+    Navbar_div.innerHTML=Navbar()
+
+    let clicked_Image = JSON.parse(localStorage.getItem("clicked_images"))
+
+    let grand = document.getElementById('cont')
+    clickedImages(clicked_Image,grand)
+
+</script>

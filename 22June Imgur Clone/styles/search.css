@@ -1,0 +1,22 @@
+#container2 {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 15px;
+    margin: auto;
+    color: white;
+}
+#searchDataDisplay  {
+    color: white;
+    /* border: 1px solid red; */
+    width: 35%;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    cursor: pointer;
+}
+#searchDataDisplay p:hover {
+color: yellow;
+transition: 0.6s;
+transform: scale(1.1);
+}
