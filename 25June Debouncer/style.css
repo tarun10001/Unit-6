@@ -1,0 +1,51 @@
+.container {
+    margin: auto;
+    align-items: center;
+    border: 1px soild red;
+    justify-content: center;
+}
+body {
+    background-color: rgb(3, 18, 36);
+}
+h1 {
+    color:aliceblue;
+    text-align: center;
+}
+
+#search  {
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    font-size: 20px;
+    display: block;
+    width: 32%;
+}
+
+#title{
+  font-size:16px;
+}
+#smallDiv2 {
+    margin-left: 5%;
+}
+#smallDiv{
+    display:flex;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: rgb(3, 18, 36);
+    border-radius: 5px;
+}
+   #movies{
+       width:500px;
+       height:550px;
+       border:1px solid  rgb(239, 223, 223);
+       overflow: auto;
+       color:rgb(237, 224, 224);
+       margin: auto;
+       margin-top: 1%;
+       box-shadow: rgba(244, 233, 233, 0.35) 0px 5px 15px;
+   }
+   img{
+       border-radius: 10px;
+       height:100px;
+       width:100px;
+   }
