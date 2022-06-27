@@ -1,0 +1,66 @@
+.App {
+  text-align: center;
+    background-color: rgb(31, 40, 49);
+    min-height: 100vh;
+    padding: 2%;
+}
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.greyText {
+  display: flex;
+  color: grey;
+  font-weight: 600;
+  gap: 2%;
+}
+
+.card {
+  width: 60%;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  margin-bottom: 4%;
+}
+
+.upperDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 3%;
+}
+
+.btn {
+  width: 25px;
+  height: 25px;
+  font-size: 18px;
+  border-radius: 50%;
+  border: none;
+  background-color: azure;
+  cursor: pointer;
+}
+
+.timeDiv {
+  display: flex;
+  gap: 3%;
+  color: grey;
+}
+
+.mainText {
+  font-size: 17px;
+  font-weight: bold;
+  color: white;
+}
+
+.btnDiv {
+  min-width: 50px;
+}
+
+.endCard {
+  justify-content: left;
+}
+
+.hideBtn {
+  visibility: hidden;
+}
