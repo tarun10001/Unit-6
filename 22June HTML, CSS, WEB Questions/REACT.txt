@@ -1,0 +1,94 @@
+Explain redux to a 5 year old (ELI5) ?
+Let’s consider an event you’re likely conversant with - going to the bank to withdraw cash. Even if you don’t do this often, you’re likely aware of what the process looks like.
+You wake up one morning, and head to the bank as quickly as possible. While going to the bank there’s just one intention / action you’ve got in mind i.e WITHDRAW_MONEY. You want to withdraw money from the bank.
+Here’s where things get interesting. When you get into the bank, you go straight to the Cashier to make your request known.
+Wait, you went to the Cashier? Why didn’t you just go into the bank vault to get your money?
+After all, it’s your hard earned money.
+Well, like you already know, things don’t work that way. Yes, the bank has money in the vault, but you have to talk to the Cashier to help you follow a due process for withdrawing your own money.
+The Cashier, from their computer, then enters some commands and delivers your cash to you. Easy-peasy.
+The bank vault keeps the money in the bank, right?
+Well, within your application, you don’t spend money. Instead, the STATE of your application is like the money you spend. The entire user interface of your application is a function of your state.
+Just like the bank vault keeps your money safe in the bank, the state of your application is kept safe by something called a STORE. So, the STORE keeps your “money” i.e state, intact.
+Uh, you need to remember this, okay?
+The Redux Store can be likened to the Bank Vault. It holds the state of your application - and keeps it safe.
+This leads to the first Redux principle:
+Have a single source of truth: The state of your whole application is stored in an object tree within a single Redux store.
+In simple terms, with Redux, it is is advisable to store your application state in a single object managed by the Redux STORE. It’s like having ONE VAULT as opposed to littering money everywhere along the bank hall.
+
+What is immutability?
+Immutability allows you to track the changes that happen to these objects like a chain of events. Variables have new references that are easy to track compared to existing variables. This helps in debugging the code and building the concurrent application.
+String is an example of an immutable type. A String object always represents the same string. StringBuilder is an example of a mutable type. It has methods to delete parts of the string, insert or replace characters, etc.
+
+What does Object.freeze() do?
+The Object.freeze() method freezes an object. A frozen object can no longer be changed; freezing an object prevents new properties from being added to it, existing properties from being removed, prevents changing the enumerability, configurability, or writability of existing properties, and prevents the values of existing properties from being changed. In addition, freezing an object also prevents its prototype from being changed. freeze() returns the same object that was passed in.
+
+Why is immutability required by Redux?
+Immutability of redux state is necessary since it allows detecting redux state changes in an efficient manner. This implies that whenever we want to modify a redux state, we must create a new copy of it and do modifications to that copy - which then becomes the new redux state.
+
+
+How does Redux use shallow equality checking?
+1.creates a reference to the current state slice referred to by each key;
+2.calls the appropriate reducer and passes it the slice;
+3.creates a reference to the possibly-mutated state slice that's returned by the reducer.
+
+How well does Redux “scale” in terms of performance and architecture?
+The work done by Redux generally falls into a few areas: processing actions in middleware and reducers (including object duplication for immutable updates), notifying subscribers after actions are dispatched, and updating UI components based on the state changes. While it's certainly possible for each of these to become a performance concern in sufficiently complex situations, there's nothing inherently slow or inefficient about how Redux is implemented. In fact, React Redux in particular is heavily optimized to cut down on unnecessary re-renders, and React-Redux v5 shows noticeable improvements over earlier versions.
+
+How does Redux compare to the React Context API?
+Context API:=>
+1.Built-in tool that ships with React
+2.Requires minimal Setup
+3.Specifically designed for static data, that is not often refreshed or updated
+4.Adding new contexts requires creation from scratch
+5.Debugging can be hard in highly nested React Component Structure even with Dev Tool
+6.UI logic and State Management Logic are in the same component
+
+
+
+Redux:=>
+1.Additional installation Required, driving up the final bundle size
+2.Requires extensive setup to integrate it with a React Application
+3.Works like a charm with both static and dynamic data
+4.Easily extendible due to the ease of adding new data/actions after the initial setup
+5.Incredibly powerful Redux Dev Tools to ease debugging
+6.Better code organization with separate UI logic and State Management Logic
+
+What is webpack ?
+Webpack is a module bundler. Webpack can take care of bundling alongside a separate task runner. However, the line between bundler and task runner has become blurred thanks to community-developed webpack plugins. Sometimes these plugins are used to perform tasks that are usually done outside of webpack, such as cleaning the build directory or deploying the build although you can defer these tasks outside of webpack.
+
+What is treeshaking ?
+Tree shaking is a term commonly used within a JavaScript context to describe the removal of dead code.
+It relies on the import and export statements in ES2015 to detect if code modules are exported and imported for use between JavaScript files.
+In modern JavaScript applications, we use module bundlers (e.g., webpack or Rollup) to automatically remove dead code when bundling multiple JavaScript files into single files. This is important for preparing code that is production ready, for example with clean structures and minimal file size.
+
+
+
+What are some features of using webpack?
+Webpack is a static build tool and there are 4 key concepts to understand how it works.
+Entry
+Webpack creates a graph of all of your application's dependencies. The starting point of this graph is known as an entry point. The entry point tells Webpack where to start and follows the graph of dependencies to know what to bundle. You can think of your application's entry point as the contextual root or the first file to kick off your app.
+In Webpack we define entry points using the entry property in our Webpack configuration object.
+The simplest example is seen below:
+Output
+Once you've bundled all of your assets together, we still need to tell Webpack where to bundle our application. The webpack output property describes to Webpack how to treat bundled code.
+Loaders
+The goal is to have all of the assets in your project to be Webpack's concern and not the browser's. (This doesn't mean that they all have to be bundled together). Webpack treats every file (.css, .html, .scss, .jpg, etc.) as a module. However, Webpack only understands JavaScript.
+Loaders in webpack_transform these files into modules_as they are added to your dependency graph.
+
+Plugins
+Since Loaders only execute transforms on a per-file basis, plugins are most commonly used (but not limited to) performing actions and custom functionality on "compilations" or "chunks" of your bundled modules (and so much more). The Webpack Plugin system is extremely powerful and customizable.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
