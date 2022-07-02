@@ -7,4 +7,3 @@
 
 # URL Shortnener Screenshot
 ![](https://github.com/tarun10001/Unit-6/blob/main/1July%20URL%20Shortener/urlshort.png?raw=true)
-[""]
