@@ -5,8 +5,8 @@ const rateLimit = require('express-rate-limit');
 
 
 const limiter = rateLimit({
-    max : 6,
-    windowMs : 10000
+    max : 10,
+    windowMs : 600000
 })
 
 app.get('/product', limiter, (req, res) => {
