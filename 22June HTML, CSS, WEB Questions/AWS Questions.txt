@@ -1,0 +1,120 @@
+What is Caching? How can you save money with Caching?
+ What is Caching?
+In computing, a cache is a high-speed data storage layer which stores a subset of data, typically transient in nature, so that future requests for that data are served up faster than is possible by accessing the data’s primary storage location. Caching allows you to efficiently reuse previously retrieved or computed data.
+How does Caching work?
+The data in a cache is generally stored in fast access hardware such as RAM (Random-access memory) and may also be used in correlation with a software component. A cache's primary purpose is to increase data retrieval performance by reducing the need to access the underlying slower storage layer.
+Trading off capacity for speed, a cache typically stores a subset of data transiently, in contrast to databases whose data is usually complete and durable.
+ 
+ 
+ What is load balancing?
+Load balancing refers to efficiently distributing incoming network traffic across a group of backend servers, also known as a server farm or server pool.
+Modern high‑traffic websites must serve hundreds of thousands, if not millions, of concurrent requests from users or clients and return the correct text, images, video, or application data, all in a fast and reliable manner. To cost‑effectively scale to meet these high volumes, modern computing best practice generally requires adding more servers.
+In this manner, a load balancer performs the following functions:
+Distributes client requests or network load efficiently across multiple servers
+Ensures high availability and reliability by sending requests only to servers that are online
+Provides the flexibility to add or subtract servers as demand dictates
+ 
+Benefits of Load Balancing
+Reduced downtime
+Scalable
+Redundancy
+Flexibility
+Efficiency
+ 
+What is CAP Theorem?
+The three letters in CAP refer to three desirable properties of distributed systems with replicated data: consistency (among replicated copies), availability (of the system for read and write operations) and partition tolerance (in the face of the nodes in the system being partitioned by a network fault). 
+The CAP theorem states that it is not possible to guarantee all three of the desirable properties – consistency, availability, and partition tolerance at the same time in a distributed system with data replication. 
+ 
+What is PACELC Theorem?
+The PACELC theorem is an extension to the CAP theorem. Both theorems were developed to provide a framework for comparing distributed systems. Like the CAP theorem, the PACELC theorem states that in case of network partitioning (P) in a distributed computer system, one has to choose between availability (A) and consistency (C). PACELC extends the CAP theorem by introducing latency and consistency as additional attributes of distributed systems. The theorem states that, “else (E), even when the system is running normally in the absence of partitions, one has to choose between latency (L) and consistency (C).”
+ 
+   5 ) What is Eventual Consistency?
+Eventual Consistency is a guarantee that when an update is made in a distributed database, that update will eventually be reflected in all nodes that store the data, resulting in the same response every time the data is queried.
+What is Eventual Consistency?
+Consistency refers to a database query returning the same data each time the same request is made. Strong consistency means the latest data is returned, but, due to internal consistency methods, it may result with higher latency or delay. With eventual consistency, results are less consistent early on, but they are provided much faster with low latency. Early results of eventual consistency data queries may not have the most recent updates because it takes time for updates to reach replicas across a database cluster.
+ 
+6) What is Strong Consistency?
+Eventual consistency is a consistency model that enables the data store to be highly available. It is also known as optimistic replication & is key to distributed systems.
+ 
+7) What are the different types of databases?
+Depending upon the usage requirements, there are following types of databases available in the market −
+Centralised database.
+Distributed database.
+Personal database.
+End-user database.
+Commercial database.
+NoSQL database.
+Operational database.
+Relational database.
+Cloud database.
+Object-oriented database.
+Graph database.
+8) What are message queues?
+A message queue is a form of asynchronous service-to-service communication used in serverless and microservices architectures. Messages are stored on the queue until they are processed and deleted. Each message is processed only once, by a single consumer. Message queues can be used to decouple heavyweight processing, to buffer or batch work, and to smooth spiky workloads.
+ 
+9) Which service by Amazon Web Services (AWS) can you use for Queues?
+Amazon Simple Queue Service (SQS) is a fully managed message queuing service that enables you to decouple and scale microservices, distributed systems, and serverless applications. SQS eliminates the complexity and overhead associated with managing and operating message-oriented middleware, and empowers developers to focus on differentiating work. Using SQS, you can send, store, and receive messages between software components at any volume, without losing messages or requiring other services to be available. Get started with SQS in minutes using the AWS Management Console, Command Line Interface or SDK of your choice, and three simple commands.
+SQS offers two types of message queues. Standard queues offer maximum throughput, best-effort ordering, and at-least-once delivery. SQS FIFO queues are designed to guarantee that messages are processed exactly once, in the exact order that they are sent.
+ 
+10) What is Pub Sub ?
+Pub/Sub allows services to communicate asynchronously, with latencies on the order of 100 milliseconds.
+Pub/Sub is used for streaming analytics and data integration pipelines to ingest and distribute data. It's equally effective as a messaging-oriented middleware for service integration or as a queue to parallelize tasks.
+ 
+11) What are webhooks?
+Webhooks are one way that apps can send automated messages or information to other apps. It's how PayPal tells your accounting app when your clients pay you, how Twilio routes phone calls to your number, and how WooCommerce can notify you about new orders in Slack.
+They're a simple way your online accounts can "speak" to each other and get notified automatically when something new happens. In many cases, you'll need to know how to use webhooks if you want to automatically push data from one app to another.
+ 
+12) What is Docker? Why do we use it?
+Docker is an open source containerization platform. It enables developers to package applications into containers—standardised executable components combining application source code with the operating system (OS) libraries and dependencies required to run that code in any environment.
+How Does Docker Work?
+Docker packages an application and all its dependencies in a virtual container that can run on any Linux server. This is why we call them containers. Because they have all the necessary dependencies contained in a single piece of software.
+Docker is composed of the following elements:
+a Daemon, which is used to build, run, and manage the containers
+a high-level API which allows the user to communicate with the Daemon,
+and a CLI, the interface we use to make this all available.
+13) What is S3 Service in AWS ?
+Amazon Simple Storage Service (Amazon S3) is an object storage service that offers industry-leading scalability, data availability, security, and performance. Customers of all sizes and industries can use Amazon S3 to store and protect any amount of data for a range of use cases, such as data lakes, websites, mobile applications, backup and restore, archive, enterprise applications, IoT devices, and big data analytics. Amazon S3 provides management features so that you can optimise, organise, and configure access to your data to meet your specific business, organisational, and compliance requirements.
+ 
+14) What is EC2 Instance in AWS?
+Amazon Elastic Compute Cloud (Amazon EC2) provides scalable computing capacity in the Amazon Web Services (AWS) Cloud. Using Amazon EC2 eliminates your need to invest in hardware up front, so you can develop and deploy applications faster. You can use Amazon EC2 to launch as many or as few virtual servers as you need, configure security and networking, and manage storage. Amazon EC2 enables you to scale up or down to handle changes in requirements or spikes in popularity, reducing your need to forecast traffic.
+ 
+15) What is Cloudfront in AWS ?
+Amazon CloudFront is a web service that speeds up distribution of your static and dynamic web content, such as .html, .css, .js, and image files, to your users. CloudFront delivers your content through a worldwide network of data centers called edge locations. When a user requests content that you're serving with CloudFront, the request is routed to the edge location that provides the lowest latency (time delay), so that content is delivered with the best possible performance.
+ 
+16) What is Route 53 In AWS ?
+Amazon Route 53 is a highly available and scalable cloud Domain Name System (DNS) web service. It is designed to give developers and businesses an extremely reliable and cost effective way to route end users to Internet applications by translating names like www.example.com into the numeric IP addresses like 192.0.2.1 that computers use to connect to each other. Amazon Route 53 is fully compliant with IPv6 as well.
+Benefits  : 
+Highly available and reliable
+Flexible
+Cost-effective
+Fast
+Simple
+
+
+17) What are ELBs in AWS?
+Elastic Load Balancing automatically distributes your incoming traffic across multiple targets, such as EC2 instances, containers, and IP addresses, in one or more Availability Zones. 
+
+Load balancer benefits : 
+A load balancer distributes workloads across multiple compute resources, such as virtual servers. Using a load balancer increases the availability and fault tolerance of your applications.
+You can add and remove compute resources from your load balancer as your needs change, without disrupting the overall flow of requests to your applications.
+ 
+18) What is TLS?
+TLS Basics
+Transport Layer Security (TLS) encrypts data sent over the Internet to ensure that eavesdroppers and hackers are unable to see what you transmit which is particularly useful for private and sensitive information such as passwords, credit card numbers, and personal correspondence.
+ 
+19) What is the difference HTTPS vs HTTP?
+What is HTTP?
+Full form of HTTP is Hypertext Transfer Protocol. HTTP offers set of rules and standards which govern how any information can be transmitted on the World Wide Web. HTTP provides standard rules for web browsers & servers to communicate.
+What is HTTPS?
+HTTPS stands for Hyper Text Transfer Protocol Secure. It is highly advanced and secure version of HTTP. It uses the port no. 443 for Data Communication. It allows the secure transactions by encrypting the entire communication with SSL. It is a combination of SSL/TLS protocol and HTTP. It provides encrypted and secure identification of a network server.
+ 
+KEY DIFFERENCE
+HTTP lacks security mechanism to encrypt the data whereas HTTPS provides SSL or TLS Digital Certificate to secure the communication between server and client.
+HTTP operates at Application Layer whereas HTTPS operates at Transport Layer.
+HTTP by default operates on port 80 whereas HTTPS by default operates on port 443.
+HTTP transfers data in plain text while HTTPS transfers data in cipher text (encrypt text).
+HTTP is fast as compared to HTTPS because HTTPS consumes computation power to encrypt the communication channel.
+ 
+ 
+20) What is a reverse proxy?
+A reverse proxy is a server that sits in front of web servers and forwards client (e.g. web browser) requests to those web servers. Reverse proxies are typically implemented to help increase security, performance, and reliability
