@@ -1,0 +1,22 @@
+.App {
+  text-align: center;
+}
+
+.container {
+  width: auto;
+  background: blue;
+  border-radius: 6px;
+  margin : 2%;
+  padding : 4%;
+}
+
+#mainDiv{
+  border: 2px solid black;
+  height: 500px;
+  width: 400px;
+  margin: 50px auto;
+  overflow: scroll;
+}
+.qw {
+  color: rgb(48, 100, 143);
+}
