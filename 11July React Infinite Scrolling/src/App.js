@@ -41,5 +41,4 @@ const scroll = (e) => {
   )
 };
 
-
 export default App;
