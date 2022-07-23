@@ -79,16 +79,5 @@ Plugins
 Since Loaders only execute transforms on a per-file basis, plugins are most commonly used (but not limited to) performing actions and custom functionality on "compilations" or "chunks" of your bundled modules (and so much more). The Webpack Plugin system is extremely powerful and customizable.
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+What are Higher Order Components?
+Simply put, Higher-Order Component(HOC) is a function that takes in a component and returns a new component. 
