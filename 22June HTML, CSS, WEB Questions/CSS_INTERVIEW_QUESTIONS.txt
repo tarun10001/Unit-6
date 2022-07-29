@@ -27,7 +27,7 @@ The flex CSS shorthand property is the combination of flex-grow, flex-shrink, an
 6.What is the difference between flex and grids?
 Grid is made for two-dimensional layout while Flexbox is for one-dimentional. This means Flexbox can work on either row or columns at a time, but Grids can work on both. Flexbox, gives you more flexibility while working on either element (row or column).
 	Grid-	Layout First	
- Flexbox-	Content First
+    Flexbox-	Content First
 
 
  7.Give an example where we have to use grids and where you have to use flexbox?
