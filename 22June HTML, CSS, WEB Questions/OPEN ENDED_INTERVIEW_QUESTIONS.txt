@@ -83,4 +83,3 @@ Qn.7)  What do you care about the most when you write software?
    b.Clarity of design. 
    c.Clarity of purpose. 
    d.You must understand — really understand — what you're doing at every level.
-   
