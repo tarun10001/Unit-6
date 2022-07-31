@@ -49,7 +49,7 @@ export const AddCity = () => {
       },
       body: JSON.stringify(formData),
     }).then((res) => {
-      console.log(res.status);
+      //console.log(res.status);
       setAlertType("success");
       setAlertMessage(`Data Added,successfully`);
       setShowAlert(true);
