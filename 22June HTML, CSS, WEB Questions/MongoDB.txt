@@ -140,3 +140,11 @@ A better solution is to replace the lookup transformation editor and the corresp
 
 27. How can you do one to many relation in MongoDB?
 One to many relationships with mongoDB can easily be mapped using mongoose. Although MongoDB isn’t a relational database like PostgreSQL, you can still create relationships that are either embedded or referenced. Referenced relationships are more akin to the relations using in relational databases.
+
+
+28. What is MongoDB ?
+MongoDB is an open-source NoSQL database written in C++ language. It uses JSON-like documents with optional schemas.
+It provides easy scalability and is a cross-platform, document-oriented database.
+MongoDB works on the concept of Collection and Document.
+It combines the ability to scale out with features such as secondary indexes, range queries, sorting, aggregations, and geospatial indexes.
+MongoDB is developed by MongoDB Inc. and licensed under the Server Side Public License (SSPL).
